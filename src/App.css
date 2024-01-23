@@ -1,38 +1,183 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 1cm;
+}
+
+header h1 {
+  margin: 0;
+  
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 31cm;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+.hero#home {
+  /* background-image: url('D:\Swapnil-ReactJS-Assignment-2\Swapnil-ReactJS-Assign-2\my-gym-website\public\images\img1.jpg'); */
+  background-image: url('../public/images/img1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-content {
+  max-width: 600px;
+  margin-right: 18cm;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.cta-btn {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
   }
-}
+  
+  .cta-btn:hover {
+    background-color: #3ee261;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* About Us Section */
+.hero#about {
+  /* background-image: url('D:\Swapnil-ReactJS-Assignment-2\Swapnil-ReactJS-Assign-2\my-gym-website\public\images\img2.jpg'); */
+  background-image: url('../public/images/img2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  color: #fff;
+  text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .hero#about .hero-content img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
   }
+  
+  .hero#about .hero-content img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Services Section */
+  .hero#services {
+    /* background-image: url('D:\Swapnil-ReactJS-Assignment-2\Swapnil-ReactJS-Assign-2\my-gym-website\public\images\img3.jpg'); */
+    background-image: url('../public/images/img3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+   
+  }
+  
+  .hero#services ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .hero#services ul li {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #090707;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .hero#services ul li:hover {
+    transform: scale(1.05);
+    background-color: #41e860;
+  }
+  
+  /* Contact Section */
+  .hero#contact {
+    /* background-image: url('D:\Swapnil-ReactJS-Assignment-2\Swapnil-ReactJS-Assign-2\my-gym-website\public\images\img4.jpg'); */
+    background-image: url('../public/images/img4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .hero#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero#contact form input,
+  .hero#contact form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .hero#contact form button {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .hero#contact form button:hover {
+    background-color: #5aec66;
+  }
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1cm;
 }
